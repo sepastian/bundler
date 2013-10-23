@@ -26,8 +26,7 @@ namespace :bundler do
     end
   end
 
-  #before 'deploy:updated', 'bundler:install'
-  before 'deploy:published', 'bundler:install'
+  before 'deploy:updated', 'bundler:install'
 end
 
 namespace :load do
